@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1329"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="64" height="64" rx="12" fill="url(#bg)"/>
+  <rect width="64" height="64" rx="12" fill="none" stroke="#00f0ff" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- T-piece (orange neon) — falling piece at top -->
+  <rect x="16" y="6"  width="10" height="10" rx="2" fill="#ff7700" filter="url(#glow)"/>
+  <rect x="27" y="6"  width="10" height="10" rx="2" fill="#ff7700" filter="url(#glow)"/>
+  <rect x="38" y="6"  width="10" height="10" rx="2" fill="#ff7700" filter="url(#glow)"/>
+  <rect x="27" y="17" width="10" height="10" rx="2" fill="#ff7700" filter="url(#glow)"/>
+
+  <!-- Row 3: cyan + yellow + purple -->
+  <rect x="5"  y="29" width="10" height="10" rx="2" fill="#00f0ff" filter="url(#glow)"/>
+  <rect x="16" y="29" width="10" height="10" rx="2" fill="#ffe600" filter="url(#glow)"/>
+  <rect x="27" y="29" width="10" height="10" rx="2" fill="#cc00ff" filter="url(#glow)"/>
+  <rect x="38" y="29" width="10" height="10" rx="2" fill="#00ff66" filter="url(#glow)"/>
+  <rect x="49" y="29" width="10" height="10" rx="2" fill="#ff0055" filter="url(#glow)"/>
+
+  <!-- Row 4: mixed -->
+  <rect x="5"  y="40" width="10" height="10" rx="2" fill="#cc00ff" filter="url(#glow)"/>
+  <rect x="16" y="40" width="10" height="10" rx="2" fill="#00f0ff" filter="url(#glow)"/>
+  <rect x="27" y="40" width="10" height="10" rx="2" fill="#ff0055" filter="url(#glow)"/>
+  <rect x="38" y="40" width="10" height="10" rx="2" fill="#ffe600" filter="url(#glow)"/>
+  <rect x="49" y="40" width="10" height="10" rx="2" fill="#00ff66" filter="url(#glow)"/>
+
+  <!-- Row 5: full line (white flash = line clear) -->
+  <rect x="5"  y="51" width="10" height="10" rx="2" fill="#ffffff" opacity="0.95" filter="url(#glow)"/>
+  <rect x="16" y="51" width="10" height="10" rx="2" fill="#ffffff" opacity="0.95" filter="url(#glow)"/>
+  <rect x="27" y="51" width="10" height="10" rx="2" fill="#ffffff" opacity="0.95" filter="url(#glow)"/>
+  <rect x="38" y="51" width="10" height="10" rx="2" fill="#ffffff" opacity="0.95" filter="url(#glow)"/>
+  <rect x="49" y="51" width="10" height="10" rx="2" fill="#ffffff" opacity="0.95" filter="url(#glow)"/>
+</svg>
